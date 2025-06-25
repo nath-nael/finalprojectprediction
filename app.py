@@ -189,7 +189,7 @@ if submitted:
         # Output prediction
         st.success(f"🎯 Predicted Salary Cluster: **{cluster}**")
         if avg_salary:
-            st.markdown(f"💵 **Estimated Average Salary** for this cluster: **${avg_salary:,.2f}**")
+            st.markdown(f"💵 **Estimated Average Salary** for this cluster: **${avg_salary:,.2f}** a year")
         else:
             st.warning("No salary data found for this cluster.")
 
