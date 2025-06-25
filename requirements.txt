@@ -1,10 +1,10 @@
 streamlit
-scikit-learn
 pandas
 numpy
+scikit-learn==1.6.1
 joblib
-category_encoders
-gdown
+category_encoders==2.6.1
 scipy==1.10.1
 statsmodels==0.13.5
-category_encoders==2.6.1
+matplotlib
+seaborn
