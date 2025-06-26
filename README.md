@@ -108,9 +108,6 @@ streamlit run app.py
 - **Salary vs. Gender**  
   Median salaries differ only slightly between groups; however, the *spread* is narrower for some, hinting at possible pay-variance disparities.
 
-- **Salary vs. Country**  
-  Wide dispersion among the top 10 countries; cost-of-living effects evident (e.g., US & Switzerland upper-bound outliers).
-
 ---
 
 ### 5. Data-Quality Checks
@@ -118,7 +115,7 @@ streamlit run app.py
 |-------|--------|
 | Missing numeric values | Filled with **0** (treated as “no response” in compensation fields). |
 | Missing categorical values | Imputed with the **mode** per column. |
-| Extreme outliers | Retained but down-weighted in clustering via scaling & PCA. |
+| Extreme outliers | Retained but down-weighted in clustering |
 
 ---
 
@@ -160,6 +157,8 @@ Output: `CleanedDataset.csv`
 - Chose `n_clusters=10` based on performance.
 
 **Clustering Score** (Silhouette): `0.79`
+Achieved the best Silhouette score with 4 features : Gender, Country, Industry, Job
+Therefore, these 4 features will be used in model training.
 
 Clusters were then treated as **target classes** for classification.
 
@@ -250,8 +249,7 @@ To run:
 ```bash
 streamlit run app.py
 ```
-
-(Hosted deployment URL available upon request or in GitHub project description)
+https://finalprojectprediction-bukxcnzjz42gxqe6qe7789.streamlit.app/
 
 ---
 
