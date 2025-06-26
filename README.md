@@ -133,12 +133,13 @@ streamlit run app.py
 ---
 
 ### 1. Cleaning (in `cleaning_dataset_1.ipynb`)
-
+- **Renaming columns**: Simplifying features from survey response.
+- **Salary conversion**: Applying salary conversion to USD.
 - **Handling imbalance data**: Implementing downsample to solve imbalance data.
 - **Country normalization**: Standardized variants like "U.S.", "USA", "United States" → "United States".
 - **Industry generalization**: Merged similar industries (e.g., "NGO", "Volunteering") into broad categories like "Non-Profit".
 - **Job title standardization**: Mapped variants like "Sr. Data Analyst", "chief executive officer" → common roles.
-
+- **Handling missing values**: Missing values imputation with (0) for numericals and (mode) for categoricals
 Output: `CleanedDataset.csv`
 
 ---
