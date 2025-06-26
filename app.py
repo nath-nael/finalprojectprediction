@@ -176,7 +176,7 @@ if submitted:
                 break
                 
             except Exception as e:
-                st.write(f"Debug - Failed with order {col_order}: {str(e)}")
+                # st.write(f"Debug - Failed with order {col_order}: {str(e)}")
                 continue
         
         if not prediction_successful:
